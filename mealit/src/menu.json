@@ -1,0 +1,266 @@
+{
+    "biryani": [
+        {
+            "_id": "5eee651f739f8c123fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/malabar.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee6671a27a66234cf2bea3",
+            "name": "Barbique BBQ",
+            "image": "biryani/dumBiryani.avif",
+            "price": "300",
+            "desc": "Irani inspired varity with tomatoes,potatoes and natural coloring"
+        },
+        {
+            "_id": "5eee6671a27a662234cf2bea3",
+            "name": "Goan Fish",
+            "image": "biryani/Goanfish.avif",
+            "price": "400",
+            "desc": "Light variety with mackerel fish,spices,grated coconut and black kokum"
+        },
+        {
+            "_id": "5eee6671a27a65654cf2bea3",
+            "name": "Hyderabadi",
+            "image": "biryani/hydrabadi.avif",
+            "price": "350",
+            "desc": "Fried onions,spicy chicken,mint leaves,rose water "
+        },
+        {
+            "_id": "5eee6671a274565674cf2bea3",
+            "name": "Kashmiri",
+            "image": "biryani/kashmiri.avif",
+            "price": "250",
+            "desc": "Saffron,spices,nuts and mutton"
+        },
+        {
+            "_id": "5eee6671a27a66574cf2bea3",
+            "name": "Mughlai",
+            "image": "biryani/mughlai.avif",
+            "price": "350",
+            "desc": "Curd marinated chicken,almond paste,ghee,chilliesand nuts"
+        }
+    ],
+    "burger": [
+        {
+            "_id": "5eee651fsdsdf739f8c123fd736ee",
+            "name": "Beyond Meat",
+            "image": "burger/BeyondMeat.jpg",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8c12dg3fd736ee",
+            "name": "Cheese Burger",
+            "image": "burger/cheese.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f73sss9f8c123dfgfd736ee",
+            "name": "Elk Burger",
+            "image": "burger/Elk.jpg",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f7sssc39f8c123dfgfd736ee",
+            "name": "HamBurger",
+            "image": "burger/hamBurger.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8c123dfgfd736ee",
+            "name": "McDonald's",
+            "image": "burger/mcDonalds.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8c12gd3fd736ee",
+            "name": "Veggie Burger",
+            "image": "burger/veggie.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        }
+    ],
+    "chicken": [
+        {
+            "_id": "5eee651f7hg39f8c123fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8cdg123fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739dsf8c123fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8hxcc123fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8c12afd3fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8c12khh3fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        }
+    ],
+    "thali": [
+        {
+            "_id": "5eee651f7asd39f8c123fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8c1gf23fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8c112423fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8c12sdv3fd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8c1233fsfd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8c123f43ggsd736ee",
+            "name": "Avadhi",
+            "image": "biryani/avadhi.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        }
+    ],
+    "pizza": [
+        {
+            "_id": "5eee66eea27a66807cf2bea8",
+            "name": "Vegies pizza",
+            "image": "pizza/vegies.png",
+            "price": "600",
+            "desc": "large"
+        },
+        {
+            "_id": "5eee6717a27a66807cf2bea9",
+            "name": "Pepperoni",
+            "image": "pizza/pepperoni.png",
+            "price": "500",
+            "desc": "medium"
+        },
+        {
+            "_id": "5eee6671a27a66807cf2bea3",
+            "name": "Marinara",
+            "image": "pizza/marinara.png",
+            "price": "300",
+            "desc": "medium"
+        },
+        {
+            "_id": "5eee6692a27a66807cf2bea4",
+            "name": "Carbonara",
+            "image": "pizza/carbonara.png",
+            "price": "200",
+            "desc": "small"
+        },
+        {
+            "_id": "5eee66a5a27a66807cf2bea5",
+            "name": "Americana",
+            "image": "pizza/americana.png",
+            "price": "500",
+            "desc": "large"
+        },
+        {
+            "_id": "5eee66c4a27a66807cf2bea6",
+            "name": "Chicken Mushroom",
+            "image": "pizza/chicken.png",
+            "price": "350",
+            "desc": "medium"
+        }
+    ],
+    "sandwich": [
+        {
+            "_id": "5eee651fafav739f8c123fd736ee",
+            "name": "Panini",
+            "image": "sandwich/panini.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee624df51f739f8c123fd736ee",
+            "name": "BLT sandwich",
+            "image": "sandwich/Blt.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eesfsde651f739f8c123fd736ee",
+            "name": "Grilled sandwich",
+            "image": "sandwich/grilled.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f73a3f4f9f8c123fd736ee",
+            "name": "Submarine",
+            "image": "sandwich/submarine.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8234asdc123fd736ee",
+            "name": "Tortas",
+            "image": "sandwich/Tortas.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        },
+        {
+            "_id": "5eee651f739f8cwqw2134123fd736ee",
+            "name": "Veggie Sandwich",
+            "image": "sandwich/veggie.avif",
+            "price": "250",
+            "desc": "Chicken,rice cooked seperately whole spices,curd and termeric"
+        }
+    ]
+}
