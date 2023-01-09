@@ -22,23 +22,31 @@
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  font-size: x-large;
+  font-size: large;
+}
+
+.Link {
+  text-decoration: none;
 }
 
 .cart {
   display: flex;
   position: relative;
   align-items: center;
-  height: 80%;
+  height: 60%;
   padding-left: 2%;
   padding-right: 2%;
-  gap: 6%;
-  font-weight: 800;
-  border: 1px solid rgb(255, 254, 252);
-  border-radius: 4px;
-  -webkit-text-stroke: 0.5px white;
-  color: rgb(255, 115, 0);
+  gap: 10%;
+  font-weight: 600;
+  border: 2px solid wheat;
+  border-radius: 20px;
+  background-color: rgb(255, 153, 0);
+  color: white;
 
+}
+
+.cart:hover {
+  background-color: rgb(252, 144, 3);
 }
 
 .btn {
@@ -53,18 +61,17 @@
 .cartCount {
   position: absolute;
   -webkit-text-stroke: 0.1px;
-  color: black;
+  color: wheat;
   font-size: 12px;
-  font-weight: bold;
   width: 20%;
   text-align: center;
-  top: -2px;
-  left: 28px;
+  top: -3px;
+  left: 26px;
 
 }
 
 .cartLogo {
-  height: 5vh;
+  height: 3vh;
 }
 
 .logotxt2 {
@@ -90,9 +97,7 @@
   height: 20vh;
   width: 30%;
   text-align: center;
-  -webkit-text-stroke: 2px rgb(255, 255, 255);
-  color: transparent;
-  border: 1px solid rgb(251, 253, 253);
+  color: white;
   padding-top: 10px;
 }
 
@@ -140,6 +145,8 @@
   margin-top: 0;
   border-radius: 50%;
 }
+
+
 
 .foodItemImg:hover {
   height: 23vh;
@@ -204,10 +211,113 @@
 
 .pricenadd {
   height: 4vh;
-  margin-top: 20px;
+  margin-bottom: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
+.foodDescrption {
+  width: 100%;
+}
 
+/* Cart */
+.container {
+
+  padding-bottom: 24px;
+  /*lg:w-1/2 w-full*/
+
+}
+
+.cartBox {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: x-large;
+  text-decoration: underline;
+  margin-top: 8px;
+}
+
+.cartList {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  background-color: aliceblue;
+  padding: 20px 30px;
+}
+
+.cartFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imgName {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin: 20px 0px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: rgb(252, 255, 240);
+}
+
+.imgName img {
+  height: 10vh;
+  border-radius: 14px;
+
+}
+
+.imgName p {
+  font-size: medium;
+  margin-left: 2%;
+}
+
+.couterBtn {
+  background-color: rgb(255, 153, 0);
+  padding: 1px 5px;
+  border-radius: 12px;
+}
+
+.dltBtn {
+  background-color: rgb(255, 153, 0);
+  color: white;
+  font-weight: 700;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+hr {
+  margin-top: 18px;
+}
+
+.cartList span {
+  margin: 0px 7px;
+}
+
+.total {
+  margin-top: 16px;
+  text-align: right;
+}
+
+.orderBtn {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.block {
+  display: block;
 }
