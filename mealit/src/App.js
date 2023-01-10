@@ -22,6 +22,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
         </Routes>
       </BrowserRouter>
+      <footer className='blockName'>made with ❤️  by umesh</footer>
     </CartContext.Provider>
 
   );

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './FoodCategories.css'
 function FoodCategories() {
     return (
         <div className='foodCatagerious'>

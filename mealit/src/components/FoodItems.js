@@ -1,5 +1,6 @@
 import React from 'react'
 import Meal from './Meal'
+import './FoodMenuContainer.css'
 
 function FoodItem({ product }) {
     return (
