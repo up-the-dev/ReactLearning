@@ -1,0 +1,47 @@
+.foodCatagerious {
+    background-color: #f3efef;
+}
+
+.blockName {
+    color: rgb(80, 76, 76);
+    font-weight: 500;
+    margin-left: 10px;
+    font-size: 22px;
+    padding-top: 10px;
+    text-decoration: underline gray;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.foodCatageriousImg {
+    margin-left: 40px;
+    margin-top: 25px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill);
+    text-align: center;
+}
+
+.foodCatageriousImg p {
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.catagoryName {
+    padding: 10px;
+}
+
+.foodItemImg {
+    height: 22vh;
+    margin-top: 0;
+    border-radius: 50%;
+}
+
+
+
+.foodItemImg:hover {
+    height: 23vh;
+    transition: all 0.5s;
+    cursor: pointer;
+}

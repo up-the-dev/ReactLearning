@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../CartContext'
-
+import './Cart.css'
 const Cart = () => {
     const { cart, setCart } = useContext(CartContext)
     let totalPrice = 0
