@@ -1,81 +1,93 @@
-import { useContext, useEffect, useState } from 'react'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../CartContext'
 
 const Cart = () => {
-    const { cartItems, setCartItems } = useContext(CartContext)
+    const { cart, setCart } = useContext(CartContext)
+    let totalPrice = 0
+    const getPrice = (item) => {
+        let price = item.meal?.price
+            ? item.meal.price * item.qnt : null
+        totalPrice = totalPrice + price
+        return price
+    }
+    const deleteProduct = (product) => {
+        let _cart = { ...cart }
+        _cart.totalItems = _cart.totalItems - product.qnt
+        delete _cart.item[product.meal._id]
+        setCart(_cart)
+
+    }
+    const increamentQnt = (item) => {
+        const _cart = { ...cart }
+        _cart.item[item.meal._id].qnt = _cart.item[item.meal._id].qnt + 1
+        _cart.totalItems = _cart.totalItems + 1
+        setCart(_cart)
+    }
+    const decrementQnt = (item) => {
+        const _cart = { ...cart }
+        if (_cart.item[item.meal._id].qnt === 1) {
+            return
+        }
+        _cart.item[item.meal._id].qnt = _cart.item[item.meal._id].qnt - 1
+        _cart.totalItems = _cart.totalItems - 1
+        setCart(_cart)
+    }
     return (
         <div className="container">
 
-            {/* {!cartItems.totalItems ?
-                <div>
-                    <img src='images/empty-cart.png' />
-                    <h1 className='text-3xl font-medium font-serif text-center'>Cart is empty</h1>
-                </div> : */}
-            <div className='cartBox'>
-                <div className='header'>
-                    <p className="heading">Cart items</p>
-                    <Link to={'/'} className='Link' >Home</Link>
+            {!cart.totalItems ?
+                <div className='emptyCart'>
+                    <Link to={'/'} className='blockName' >⬅️Home</Link>
+                    <img src='empty-cart.png' width={'40%'} alt="emptyCartImg" />
+                    <h1 className=''>Cart is empty</h1>
+                </div> :
+                < div className='cartBox'>
+                    <div className='header'>
+                        <p className="heading">Cart items</p>
+                        <Link to={'/'} className='blockName' >Home</Link>
+                    </div>
+                    <ul className="cartList">
+                        {Object.entries(cart.item).map((items) => {
+                            return items.map((item) => {
+                                {
+                                    return !item.meal?.image ? "" : <li >
+                                        <div className="cartFlex">
+                                            <div className="imgName">
+                                                <img src={item.meal.image
+                                                } alt="product" />
+                                                <p>{item.meal.name
+                                                }</p>
+                                            </div>
+                                            <div>
+                                                {console.log(item.qnt)}
+                                                <button onClick={() => decrementQnt(item)} className={` ${item.qnt === 1 ? `disabled` : `couterBtn`}`} >-</button>
+                                                <span >{item.qnt}</span>
+                                                <button className="couterBtn" onClick={() => increamentQnt(item)}>+</button>
+                                            </div>
+                                            <p>₹ {getPrice(item)}</p>
+                                            <button className="dltBtn" onClick={() => deleteProduct(item)}>Delete</button>
+                                        </div>
+                                    </li>
+                                }
+                            })
+                        })}
+                    </ul>
+
+                    <hr />
+                    <div className="total">
+                        <b>Grand Total:</b> ₹ {totalPrice}
+                    </div>
+                    <div className="orderBtn">
+                        <button className="dltBtn" onClick={() => {
+                            window.alert('Order placed successfully')
+                            setCart({})
+                        }} >Order Now</button>
+                    </div>
                 </div>
 
-                <ul className="cartList">
-                    <li >
-                        <div className="cartFlex">
-                            <div className="imgName">
-                                <img src='/biryani/Goanfish.avif' alt="product" />
-                                <p>Goanfish biryani</p>
-                            </div>
-                            <div>
-                                <button className="couterBtn" >-</button>
-                                <span >1</span>
-                                <button className="couterBtn ">+</button>
-                            </div>
-                            <p>₹ 250</p>
-                            <button className="dltBtn" >Delete</button>
-                        </div>
-                    </li>
-                    <li >
-                        <div className="cartFlex">
-                            <div className="imgName">
-                                <img src='/biryani/Goanfish.avif' alt="product" />
-                                <p>Goanfish biryani</p>
-                            </div>
-                            <div>
-                                <button className="couterBtn" >-</button>
-                                <span >1</span>
-                                <button className="couterBtn ">+</button>
-                            </div>
-                            <p>₹ 250</p>
-                            <button className="dltBtn" >Delete</button>
-                        </div>
-                    </li>
-                    <li >
-                        <div className="cartFlex">
-                            <div className="imgName">
-                                <img src='/biryani/Goanfish.avif' alt="product" />
-                                <p>Goanfish biryani</p>
-                            </div>
-                            <div>
-                                <button className="couterBtn" >-</button>
-                                <span >1</span>
-                                <button className="couterBtn ">+</button>
-                            </div>
-                            <p>₹ 250</p>
-                            <button className="dltBtn" >Delete</button>
-                        </div>
-                    </li>
-                </ul>
-                <hr />
-                <div className="total">
-                    <b>Grand Total:</b> ₹ 2430
-                </div>
-                <div className="orderBtn">
-                    <button className="dltBtn" >Order Now</button>
-                </div>
-            </div>
-
-
-        </div>
+            }
+        </div >
     )
 }
 export default Cart

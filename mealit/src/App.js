@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import { CartContext } from './CartContext';
@@ -7,9 +7,14 @@ import Home from './pages/Home';
 
 
 function App() {
-  const [cartItems, setCartItems] = useState({});
+  const [cart, setCart] = useState(() => {
+    return JSON.parse(localStorage.getItem('cart')) || {}
+  })
+  useEffect(() => {
+    window.localStorage.setItem('cart', JSON.stringify(cart))
+  }, [cart])
   return (
-    <CartContext.Provider value={[cartItems, setCartItems]}>
+    <CartContext.Provider value={{ cart, setCart }}>
 
       <BrowserRouter>
         <Routes>
